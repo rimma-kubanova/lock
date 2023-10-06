@@ -1,8 +1,8 @@
-# Lock
+# 🔒 Lock
 
 This project implements lock mechanism using a database that ensures only one server performs task at a given time.
 
-## Requirements / Versions
+## 🦁 Requirements / Versions
   - Python 3.x
   - SQLite3
   - croniter 1.4.1
@@ -10,7 +10,7 @@ This project implements lock mechanism using a database that ensures only one se
   - python-dateutil 2.8.2
   - six 1.16.0
   
-## Installing
+## 🐥 Installing
 
 1. Clone the repository:
    ```bash
@@ -22,12 +22,12 @@ This project implements lock mechanism using a database that ensures only one se
    ```bash
     pip3 install -r text_req.txt
 
-## Running the code
+## 🦕 Running the code
   ```bash
   python3 test_task.py
   ```
 
-## Database Structure
+## 🐘 Database Structure
 <img width="1041" alt="Screenshot 2023-10-07 at 02 12 57" src="https://github.com/rimma-kubanova/lock/assets/115300909/8e1d4046-3875-4100-b79f-b6dd5849f755">
 
  - `lock_name`: The name of the lock for task (e.g, "backup")
