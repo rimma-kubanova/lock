@@ -2,13 +2,13 @@
 
 This project implements lock mechanism using a database that ensures only one server performs task at a given time.
 
-## Requirements/Versions
-  Python 3.x
-  SQLite3
-  croniter 1.4.1
-  psycopg2-binary 2.9.9
-  python-dateutil 2.8.2
-  six 1.16.0
+## Requirements / Versions
+  - Python 3.x
+  - SQLite3
+  - croniter 1.4.1
+  - psycopg2-binary 2.9.9
+  - python-dateutil 2.8.2
+  - six 1.16.0
   
 ## Installing
 
@@ -28,6 +28,7 @@ This project implements lock mechanism using a database that ensures only one se
   ```
 
 ## Database Structure
+<img width="1041" alt="Screenshot 2023-10-07 at 02 12 57" src="https://github.com/rimma-kubanova/lock/assets/115300909/8e1d4046-3875-4100-b79f-b6dd5849f755">
 
  - `lock_name`: The name of the lock for task (e.g, "backup")
   - `lock_owner`: The server running the task (e.g, "server-1")
