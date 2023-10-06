@@ -45,6 +45,7 @@ def simulate(process_id):
 
 
 if __name__ == "__main__":
+    # initialize lock class
     db_lock = db_lock.Lock()
     main_loop()
     
