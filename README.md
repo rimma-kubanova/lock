@@ -2,7 +2,7 @@
 
 This project implements lock mechanism using a database that ensures only one server performs task at a given time.
 
-## 🦁 Requirements / Versions
+## Requirements / Versions
   - Python 3.x
   - SQLite3
   - croniter 1.4.1
@@ -10,7 +10,7 @@ This project implements lock mechanism using a database that ensures only one se
   - python-dateutil 2.8.2
   - six 1.16.0
   
-## 🐥 Installing
+## Installing
 
 1. Clone the repository:
    ```bash
@@ -22,7 +22,7 @@ This project implements lock mechanism using a database that ensures only one se
    ```bash
     pip3 install -r text_req.txt
 
-## 🦕 Running the code
+## Running the code
   ```bash
   python3 test_task.py
   ```
@@ -56,3 +56,5 @@ When `server-1` runs the task, it follows the process below:
 
 For testing purposes, I ran five programs using threading:
 - Despite 5 servers running at the same time, one server executes the task
+
+That's it folks, gonna now sleep 🦕
