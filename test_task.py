@@ -7,7 +7,7 @@ import time
 
 next_time_to_execute = datetime.now()
 cron_execute_every_hour = '* */1 * * *'
-# owner_name = 'server 6'
+owner_name = 'server 7'
 def run_task():
     # Код который должен быть выполнен только 1 раз за час
     # только на 1 машине
@@ -23,7 +23,7 @@ def main_loop():
             # Значит выполнять код можно и никто кроме этой машины
             # его в данный момент не выполнит.
             # Здесь нет except значит рейзить ошибки нельзя
-            if db_lock.aquire(owner_name,'backup_lock_3'):
+            if db_lock.aquire(owner_name,'backup_lock_5'):
                 run_task()
             else:
                 print("queue: task is already running")
@@ -46,15 +46,15 @@ def simulate(process_id):
 
 if __name__ == "__main__":
     db_lock = db_lock.Lock()
-    # main_loop()
+    main_loop()
     
     
     # testing, simulating 5 tasks running at the same time using threading
-    processes = []
-    for i in range(1, 6):
-        process = threading.Thread(target=simulate, args=(i,))
-        processes.append(process)
-        process.start()
+    # processes = []
+    # for i in range(1, 6):
+    #     process = threading.Thread(target=simulate, args=(i,))
+    #     processes.append(process)
+    #     process.start()
 
-    for process in processes:
-        process.join()
+    # for process in processes:
+    #     process.join()
